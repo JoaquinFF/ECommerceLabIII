@@ -1,12 +1,17 @@
 import { styled } from "styled-components";
+import LandingAppbar from "../components/appbars/LandingAppbar"
 
 const Index = () => {
     return(
-        <Componente>aaaa</Componente>
+        <MainContainer>
+            <LandingAppbar/>
+
+        </MainContainer>
+        
     );
 }
 
-const Componente = styled.div`
+const MainContainer = styled.div`
 `;
 
 export default Index;
