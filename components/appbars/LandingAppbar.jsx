@@ -6,11 +6,9 @@ const LandingAppbar = () => {
   return (
     <NavBar id="navegador">
       <StyledLogo
-        className="imagenLoca"
+        className="styledLogo"
         src={logo}
-        width={287}
-        height={85}
-        alt="FieldManager Mining"
+        alt="Concesionaria GF"
       />
 
     </NavBar>
@@ -20,7 +18,7 @@ const LandingAppbar = () => {
 export default LandingAppbar;
 
 const NavBar = styled.div`
-  background-color: #E1F4F3; //Luego editar esto y hacer variables para usar colores y fuentes mucho mas facil
+  background-color: var(--secondary-color); //Luego editar esto y hacer variables para usar colores y fuentes mucho mas facil
   height: 4rem;
   width: 100vw;
   display: flex;
@@ -36,7 +34,7 @@ const StyledLogo = styled(Image)`
   display: flex;
   justify-self: left;
   margin-left: 20px;
-  width: 12rem;
+  width: 5rem;
 
   @media (max-width: 320px) {
     width: 9rem;
@@ -58,51 +56,51 @@ const StyledLogo = styled(Image)`
   }
 `;
 
-const ContainerButttons = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-right: 1.5vh;
+// const ContainerButttons = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-evenly;
+//   margin-right: 1.5vh;
 
-  @media (max-width: 400px) {
-    width: 30vw;
-    margin-right: 20px;
-  }
-`;
+//   @media (max-width: 400px) {
+//     width: 30vw;
+//     margin-right: 20px;
+//   }
+// `;
 
-const OrderedList = styled.ol`
-  display: none;
-  padding-top: 8px;
-  list-style-type: none;
-  float: right;
-  margin-right: 30px;
-`;
+// const OrderedList = styled.ol`
+//   display: none;
+//   padding-top: 8px;
+//   list-style-type: none;
+//   float: right;
+//   margin-right: 30px;
+// `;
 
-const StyledLi = styled.li`
-  display: inline;
-  justify-content: end;
-`;
+// const StyledLi = styled.li`
+//   display: inline;
+//   justify-content: end;
+// `;
 
-const Span = styled.span`
-  color: #eda42c;
-  border: none;
-  margin-right: 20px;
-`;
+// const Span = styled.span`
+//   color: #eda42c;
+//   border: none;
+//   margin-right: 20px;
+// `;
 
-const Button = styled.button`
-  color: #eda42c;
-  border: none;
-  margin-right: 20px;
-  width: 10px;
-  padding-left: 3px;
-`;
+// const Button = styled.button`
+//   color: #eda42c;
+//   border: none;
+//   margin-right: 20px;
+//   width: 10px;
+//   padding-left: 3px;
+// `;
 
-const List = styled.ul`
-  background-color: var(--clr-bg);
-  padding: 3px;
-`;
+// const List = styled.ul`
+//   background-color: var(--clr-bg);
+//   padding: 3px;
+// `;
 
-const Item = styled.a`
-  color: #eda42c;
-  padding: 1rem;
-`;
+// const Item = styled.a`
+//   color: #eda42c;
+//   padding: 1rem;
+// `;
