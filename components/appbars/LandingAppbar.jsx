@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 import logo from "../../public/img/Logo.png";
+import SearchBar from "../searchbar/SearchBar";
 
 const LandingAppbar = () => {
   return (
@@ -10,7 +11,8 @@ const LandingAppbar = () => {
         src={logo}
         alt="Concesionaria GF"
       />
-
+      <Title>CONCESIONARIA GF</Title>
+      <SearchBar/>
     </NavBar>
   );
 };
@@ -56,51 +58,7 @@ const StyledLogo = styled(Image)`
   }
 `;
 
-// const ContainerButttons = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-evenly;
-//   margin-right: 1.5vh;
+const Title = styled.h4`
+  font-family: var(--primary-font)
+`;
 
-//   @media (max-width: 400px) {
-//     width: 30vw;
-//     margin-right: 20px;
-//   }
-// `;
-
-// const OrderedList = styled.ol`
-//   display: none;
-//   padding-top: 8px;
-//   list-style-type: none;
-//   float: right;
-//   margin-right: 30px;
-// `;
-
-// const StyledLi = styled.li`
-//   display: inline;
-//   justify-content: end;
-// `;
-
-// const Span = styled.span`
-//   color: #eda42c;
-//   border: none;
-//   margin-right: 20px;
-// `;
-
-// const Button = styled.button`
-//   color: #eda42c;
-//   border: none;
-//   margin-right: 20px;
-//   width: 10px;
-//   padding-left: 3px;
-// `;
-
-// const List = styled.ul`
-//   background-color: var(--clr-bg);
-//   padding: 3px;
-// `;
-
-// const Item = styled.a`
-//   color: #eda42c;
-//   padding: 1rem;
-// `;

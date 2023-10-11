@@ -7,4 +7,6 @@ body {
  --primary-color: #E1F4F3;
  --secondary-color: #FFFFFF;
  --tertiary-color: #706C61;
+
+ --primary-font: 'Inter';
 }
